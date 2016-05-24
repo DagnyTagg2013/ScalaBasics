@@ -1,0 +1,130 @@
+
+
+0) GENERAL
+
+- How Internet Works
+http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/Howstuffworks.htm
+- How Web Servers Work
+https://web.stanford.edu/class/cs101/network-3-web.html
+- How HTTPS Works
+http://robertheaton.com/2014/03/27/how-does-https-actually-work/
+https://www.youtube.com/watch?v=iQsKdtjwtYI
+https://blog.hartleybrody.com/https-certificates/
+- Web Sockets vs Ajax
+http://stackoverflow.com/questions/10028770/html5-websocket-vs-long-polling-vs-ajax-vs-webrtc-vs-server-sent-events
+http://www.infoq.com/news/2008/12/websockets-vs-comet-ajax
+- How DNS Works
+http://www.opsschool.org/en/latest/dns_101.html
+(see sections on hosts file, and on resolv.conf file)
+https://en.wikipedia.org/wiki/Resolv.conf
+- How SSH Works
+https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process
+https://www.youtube.com/watch?v=zlv9dI-9g1U
+- How to SSH into VirtualBox Guest VM FROM Host machine!
+http://wiredrevolution.com/virtualbox/setup-ssh-access-between-virtualbox-host-and-guest-vms
+- How to Access WS on VirtualBox Guest VM FROM Host machine!
+http://askubuntu.com/questions/52147/how-can-i-access-apache-on-virtualbox-guest-from-host   (answer with 107 votes)
+http://unix.stackexchange.com/questions/108878/how-to-connect-to-a-guest-vm-from-the-host-system  (when to use which networking type)
+http://coding4streetcred.com/blog/post/VirtualBox-Configuring-Static-IPs-for-VMs (when DHCP boots up different IP addresses for VM each time, and you want a STATIC one!)
+- How OAuth2 Works!
+http://stackoverflow.com/questions/4727226/on-a-high-level-how-does-oauth-2-work
+- Microservices/Reactive
+https://twitter.com/jamie_allen/status/710733271408115712
+https://www.lightbend.com/resources/videos
+- How OAuth Works!
+https://dev.twitter.com/oauth/overview/introduction
+- How Http Proxy Works!
+http://stackoverflow.com/questions/7155529/how-does-http-proxy-work
+
+
+1) Scala Baseline
+
+- partial Functions
+- immutable collections
+- lazy val                                           \
+- review traits; extend, with!
+- TESTING in SCALA (OReilly)
+- LightBend Tutorial
+http://www.lightbend.com/activator/template/scala-testing
+
+1.5) Reactive (Ch 1)
+
+- Section 1.2 on Async Architecture vs Multithreaded
+- Section 1.3 on Reactive Failure Cases
+
+2) JS WebSocket Client (Ch 2)
+
+- Web Sockets intro vs others
+- Section 2.3.2 setting up connection
+- Sectiom 2.4.1 Client-side failure scenarios
+- Web Server!
+
+- Web Sockets vs Ajax
+http://stackoverflow.com/questions/10028770/html5-websocket-vs-long-polling-vs-ajax-vs-webrtc-vs-server-sent-events
+http://www.infoq.com/news/2008/12/websockets-vs-comet-ajax
+
+
+3) Futures (Ch 5, Reactive Web UI)
+
+- Actors vs Futures:
+https://www.quora.com/Which-among-Scala-Actors-and-Scala-Futures-should-be-preferred-for-concurrency-and-why
+*** PREFER Akka Actors to Scala ones!
+
+- TEST cases; timeouts, etc!
+
+4) Actors (Ch 6, Reactive Web UI)
+
+- Finite State Machine with Akka Actors
+http://sdanzig.blogspot.com/2013/06/buddychat-simple-example-of-akka-actors.html
+
+
+5) State Mgmt/CQRS (Ch 7)
+
+6) Streams (Ch 9)
+
+- Section 9.1.1 on BackPressure!
+TODO:  Streams API vs Enumerator vs Iteratees?
+
+7) React.js with RxJS!
+
+- Testing a FULL Reactive Application in Ch 11 of Manning's Reactive Web Applications book!
+- http://www.meetup.com/Real-World-React/events/229953096/
+Rx
+- https://medium.com/@benlesh/learning-observable-by-building-observable-d5da57405d87#.o3grao84q
+- https://egghead.io/lessons/rxjs-creating-observable-from-scratch
+CodeCamp
+- https://www.freecodecamp.com/
+
+
+8) Activator Akka-HTTP-Microservice (Lightbend seed template)
+
+- goto Finder; TECH-Projects/ScalaProjects/(seed template projectname); then select /bin/Activator to startup!
+- MAY need to goto /user/daphneeng to rm -rf RUNNING_PID file for restart!
+
+- http://www.lightbend.com/activator/template/akka-stream-scala
+
+9) Calling External WS with Play API!
+
+- WS API
+
+https://www.playframework.com/documentation/2.5.x/ScalaWS
+- running Play WS Standalone Client without Play Core!
+http://carminedimascio.com/2015/02/how-to-use-the-play-ws-library-in-a-standalone-scala-app/
+
+10) Deploy Play Web Server on Heroku
+
+TODO:  How to Deploy Akka Microservice on Heroku?
+- Scala, Akka, Play on Heroku
+http://www.lightbend.com/blog/scala-on-heroku- start Scala and Web App on Heroku
+https://devcenter.heroku.com/articles/getting-started-with-scala#deploy-the-app
+- Heroku deployment
+https://devcenter.heroku.com/articles/deploying-scala-and-play-applications-with-the-heroku-sbt-plugin
+- running Play WS on Heroku!
+https://www.jamesward.com/2011/10/19/running-play-framework-scala-apps-on-heroku
+
+
+
+
+
+
+
