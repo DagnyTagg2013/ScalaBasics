@@ -18,69 +18,69 @@ ANALOGY:  Think of FURNITURE, eg how you might access books(or pieces of data) s
 RELATED types:
 - Tuple (HETEROGENEOUS data, e.g. some Strings, some Integers)
 - ListBuffer (similar to list, but MUTABLE-modifiable)
+http://www.tutorialspoint.com/scala/scala_tuples.htm
 
 - PHYSICAL ANALOGY for a COLLECTION:
-     *- think DISHES vs CLOTHES; both can be stored in a DRAWER, but typically you put them in separate drawers in the kitchen
-     *vs guest room because you have different ways of using them.
-     *- say type T is a GENERIC TYPE of DATA ELEMENT (think CLOTHES, or BOOKS)
-     *- say containers or COLLECTIONS hold those data elements (think DRESSER or DISH CABINET)
+     - think DISHES vs CLOTHES; both can be stored in a DRAWER, but typically you put them in separate drawers in the kitchen
+     vs guest room because you have different ways of using them.
+     - say type T is a GENERIC TYPE of DATA ELEMENT (think CLOTHES, or BOOKS)
+     - say containers or COLLECTIONS hold those data elements (think DRESSER or DISH CABINET)
 
-*1) PHYSICAL ANALOGY FOR A LIST:
-*- TODO:  Go find a fun GIF!!!
-*- think of a TRAIN with:
-  *- an Engine at the front
-    *or HEAD
-  *- several Cars in the middle
-    *or DATA ELEMENTS
-  *- a Caboose at the end
-    *or NIL
-  *- all Cars after the front Engine
-    *or TAIL
-  *- you have to walk the length of the train to find a Car in the middle or the end
-    *or SEQUENTIAL ACCESS
-  *- the cars don't necessarily have to be any order
-    *or UNORDERED
-  *- you can create a new list; but adding  Cars to the END of the list
-    *or APPEND
+1) PHYSICAL ANALOGY FOR A LIST:
+- TODO:  Go find a fun GIF!!!
+- think of a TRAIN with:
+  - an Engine at the front
+    or HEAD
+  - several Cars in the middle
+    or DATA ELEMENTS
+  - a Caboose at the end
+    or NIL
+  - all Cars after the front Engine
+    or TAIL
+  - you have to walk the length of the train to find a Car in the middle or the end
+    or SEQUENTIAL ACCESS
+  - the cars don't necessarily have to be any order
+    or UNORDERED
+  - you can create a new list; but adding  Cars to the END of the list
+    or APPEND
 
-*2) Each data structure has a certain set of characteristics in terms of:
-   *TIME to access the data stored in it via OPERATIONS (methods) permitted on it
-   *SPACE it requires
+2) Each data structure has a certain set of characteristics in terms of:
+   TIME to access the data stored in it via OPERATIONS (methods) permitted on it
+   SPACE it requires
 
-   *Depending on the problem you're trying to solve; your SECRET SAUCE as a developer or engineer,
-   *is your capacity to choose the optimal data structure and associated algorithm, so solve that problem;
-   *FASTER, with MAINTAINABLE CODE, and with FEWER RESOURCES (memory or SPACE).
+   Depending on the problem you're trying to solve; your SECRET SAUCE as a developer or engineer,
+   is your capacity to choose the optimal data structure and associated algorithm, so solve that problem;
+   FASTER, with MAINTAINABLE CODE, and with FEWER RESOURCES (memory or SPACE).
 
-   *A LIST provides (CONSTANT or IMMEDIATE) access to its HEAD and TAIL
-   *e.g. Dedicated Engineers standing ready at those locations on the train
+   A LIST provides (CONSTANT or IMMEDIATE) access to its HEAD and TAIL
+   e.g. Dedicated Engineers standing ready at those locations on the train
 
-   *It also provides (SEQUENTIAL) access to ELEMENTS within its TAIL
-   *e.g. Other Engineers have to WALK to TAIL Cars to find specific ones
+   It also provides (SEQUENTIAL) access to ELEMENTS within its TAIL
+   e.g. Other Engineers have to WALK to TAIL Cars to find specific ones
 
-*3) ESSENTIAL Operations:
-   *- create
-   *- equals
-   *- exists
-   *- contains
-   *- remove
-   *- length
-   *- print
-   *- prepend element operator
-   *- concatenation or (GLUE) list operator
+3) ESSENTIAL Operations:
+   - create
+   - equals
+   - exists
+   - contains
+   - remove
+   - length
+   - print
+   - prepend element operator
+   - concatenation or (GLUE) list operator
 
-*http://stackoverflow.com/questions/9556579/finding-an-item-that-matches-predicate-in-scala
-*http://alvinalexander.com/scala/how-to-delete-elements-from-list-listbuffer-scala-cookbook
+http://stackoverflow.com/questions/9556579/finding-an-item-that-matches-predicate-in-scala
+http://alvinalexander.com/scala/how-to-delete-elements-from-list-listbuffer-scala-cookbook
 
+4) Data Science-related operations:
+   - map
+   - reduce
+   - flatmap  (say input function creates a collection itself, so to avoid final result being NESTED collections, just use this)
+   - min
 
-*4) Data Science-related operations:
-   *- map
-   *- reduce
-   *- flatmap  (say input function creates a collection itself, so to avoid final result being NESTED collections, just use this)
-   *- min
+5) Algo-related operations:
 
-*5) Algo-related operations:
-
-   *- pattern-matching
+   - pattern-matching
 
 ****************************************************************************************/
 
@@ -91,7 +91,6 @@ EXERCISES
 // EX1:  CREATE a new LIST, then print number of elements and contents
 /*
 INITIALIZING a LIST of data elements
-
 TODO: - define TYPEs later incl
 - Unit which is like VOID
 - Inferred types
@@ -143,30 +142,23 @@ val sum = oneToTen.reduce( (lhs, rhs) => (lhs + rhs))
 val average = sum/oneToTen.length
 // EX8:  deletion from a list weird, due to immutability.  if you need to modify element frequently, use a ListBuffer!
 // http://alvinalexander.com/scala/how-to-delete-elements-from-list-listbuffer-scala-cookbook
-
 // MUTABLE
 // NOTE:  have to explicitly import, as not by default included in scala._
 val modifiableNums = ListBuffer(1, 2, 3, 4, 5, 6, 7, 8, 9)
 modifiableNums -= (2, 3)
 modifiableNums.remove(0)
-println(modifiableNums mkString "\n")
-
+println(modifiableNums mkString)
 // IMMUTABLE
 val lessThan5 = oneToTen.filter(_ < 5)
 
-// ***=****************************************************************************************
-
+// *******************************************************************************************
 /*
-
 REFERENCES for details on LIST:
-
 http://www.scala-lang.org/api/current/#scala.collection.immutable.List
 http://docs.scala-lang.org/overviews/collections/overview.html
 http://booksites.artima.com/programming_in_scala_2ed/examples/html/ch16.html#sec7
 http://docs.scala-lang.org/overviews/collections/performance-characteristics
-
 */
-
 // **********************************************************************************************
 
 /*
