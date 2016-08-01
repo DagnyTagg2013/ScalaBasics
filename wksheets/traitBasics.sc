@@ -14,7 +14,7 @@
     - *** MIXIN DYNAMICALLY 'WITH" keyword on new class instantiation!
     - OVERRIDE shadowed method!
     - *** SCALA COMPILER CATCHES DIAMOND MULTIPLE INHERITANCE OVERRIDE CONFLICT!
-    - *** TYPE-LINEARLIZATION TO RESOLVE METHOD!
+    - *** TYPE-LINEARIZATION TO RESOLVE METHOD!
    ” In performing a linearization, you start with the type of the instantiated (leaf) class and
    recursively expand each of its supertypes into a list of their supertypes
    (the resulting list should be flat, not nested).

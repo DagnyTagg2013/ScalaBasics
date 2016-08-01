@@ -237,7 +237,7 @@ Adding this to the top of the file chooses the default execution context for asy
 
     } yield (isEachOnePlayMainUp && isEachOnePlayGitUp)
 
-    // processing competed Future to result by MATCHING on reculting Try values!
+    // processing competed Future to result by MATCHING on resulting Try values!
     //  Try can be thought of as a container type that results in either a Success(value) or a Failure(exception)
     // TODO:  does Play ws automatically WRAP the Promise results part for the WS call?
     // TODO:  does this code have to run WITHIN a Web Server instance; or is that instantiated under-the-hood by importing the Play libraries?

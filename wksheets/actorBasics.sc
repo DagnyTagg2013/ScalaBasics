@@ -8,7 +8,7 @@ REFERENCES
 TODO:  Akka Streams replacing Iteratees and Enumerators?
 - p149 Manning Reactive Web Apps
 - http://letitcrash.com
-
+- https://www.toptal.com/scala/concurrency-and-fault-tolerance-made-easy-an-intro-to-akka
 
 ACTOR
 - INTERNAL mutable state
@@ -58,26 +58,10 @@ ie can change their own state based on messages past
 
   ENUMERATOR/ITERATEE
   - Enumerator provides SOURCE of data
-  - Enumeratee provides FILTER for data
-  - Iteratee provides
+  - Enumerateesbt-idea-repo provides FILTER for data
+  - Iteratee is an abstraction of iteration over chunks of data in a non-blocking and asynchronous way
+  http://mandubian.com/2012/08/27/understanding-play2-iteratees-for-normal-humans/
 
  */
 
-/*
-
-    TWITTER TOKENS!
-
-    API Key:
-    	Zzpuunm157uJBJTgNa0u5BkWV
-
-    API Secret:
-      FTcolBMVQAsMkJ6fTCo6FvrPg4p5rv4JMyr2n8NhVLdinHLNus
-
-    Access Token:
-      250322617-c2fKwLVcKa1lndsjV76wtvafItI8yg1mTttvFzwz
-
-    Access Token Secret:
-      wV9AhFw7uik7WvSZsCFMmbiies1xySdxSI372v8UDNcHt
-
- */
 
